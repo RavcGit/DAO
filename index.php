@@ -20,5 +20,16 @@ require_once("config.php");
 //$usuario->login("master", "master");
 //echo $usuario;
 
+//Criando um novo usuario
+//$aluno = new Usuario("alu", "sahus");
+//$aluno->insert();
+//echo $aluno;
 
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->update("professor", "#$@$%");
+
+echo $usuario;
  ?>
