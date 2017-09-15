@@ -24,12 +24,19 @@ require_once("config.php");
 //$aluno = new Usuario("alu", "sahus");
 //$aluno->insert();
 //echo $aluno;
+/*
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->update("professor", "#$@$%");
+echo $usuario;
+*/
+
 
 $usuario = new Usuario();
+$usuario->loadById(3);
 
-$usuario->loadById(6);
-
-$usuario->update("professor", "#$@$%");
+$usuario->delete();
 
 echo $usuario;
+
  ?>
